@@ -7,6 +7,13 @@ import './styles.css'
 import { AuthProvider } from './contexts/AuthContext'
 import { StoreProvider } from './contexts/StoreContext'
 
+
+function App(){
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}></BrowserRouter>
+  )
+}
+
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
